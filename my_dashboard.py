@@ -165,7 +165,6 @@ if page == "Overview":
 
 
     branch_city_sales = df_filtered.groupby(['Branch', 'City']).agg(Total_Revenue=('Total', 'sum')).reset_index()
-    st.subheader("Total Revenue by Branch and City")
     fig_branch_city = px.bar(
         branch_city_sales, 
         x='Branch', 
@@ -203,7 +202,6 @@ if page == "Overview":
         yaxis_title_font_size=18,
         legend_font_size=16
     )
-    st.subheader("Sale Trends Over Time")
     st.plotly_chart(fig_daily_sales, use_container_width=True)
 elif page == "Research Question 1":
     st.title("Research Question 1")
