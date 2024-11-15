@@ -97,7 +97,7 @@ if page == "Overview":
     # Key Metrics
     st.markdown("### Key Metrics")
     total_customers = df_filtered['Invoice ID'].nunique()
-    total_profit = df_filtered['gross income'].sum()
+    total_profit = df_filtered['gross income'].sum().round(0)
     total_cogs = df_filtered['cogs'].sum()
     kpi1, kpi2, kpi3 = st.columns([1, 1, 1])
     kpi1.metric("No. of Customers:", total_customers)
