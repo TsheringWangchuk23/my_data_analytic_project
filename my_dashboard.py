@@ -135,7 +135,6 @@ if page == "Overview":
             product_sales, 
             values='Total_Revenue', 
             names='Product line', 
-            title="Sales by Product Line",
             color_discrete_sequence=["#535C91", "#1B1A55", "#9290C3", "#070F2B"]
         )
         fig_product_sales.update_layout(
@@ -151,7 +150,6 @@ if page == "Overview":
             customer_type_gender,
             values='Count', 
             names='Customer type', 
-            title="Customer Type by Gender",
             color='Customer type', 
             color_discrete_sequence=["rgb(52, 50, 163)", "rgb(141, 148, 189)"]  # Updated color scheme
         )
@@ -161,7 +159,7 @@ if page == "Overview":
             legend_font_size=16,
         )
 
-        st.subheader("Customer Type by Gender")
+        st.subheader("Customer Type by Membership")
         st.plotly_chart(fig_customer_demographics, use_container_width=True)
 
 
