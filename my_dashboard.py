@@ -151,7 +151,7 @@ if page == "Overview":
             customer_type_gender,
             values='Count', 
             names='Customer type', 
-            title="Customer Type by Gender",
+            title="Customer Type by Membership",
             color='Customer type', 
             color_discrete_sequence=["rgb(52, 50, 163)", "rgb(141, 148, 189)"]  # Updated color scheme
         )
