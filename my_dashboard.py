@@ -434,7 +434,7 @@ elif page == "Research Question 4":
         x=product_city_sales.columns,
         y=product_city_sales.index,
         text=text_values.values,  # Add text values
-        texttemplate="%{text}",  # Display text values
+        hovertemplate="%{text}",  # Display text values
         colorscale='Blues',
         colorbar=dict(title="Sales")
     ))
