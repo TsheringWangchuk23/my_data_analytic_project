@@ -1,5 +1,5 @@
 streamlit==1.40.1
 pandas==2.2.3
-numpy==2.1.3
-plotly==5.3.1  # Or the latest compatible version for your code
-altair==5.4.1  # If Altair is needed for your visualizations
+numpy==1.24.3  # Downgrade to a compatible version
+plotly==5.3.1
+altair==5.4.1
